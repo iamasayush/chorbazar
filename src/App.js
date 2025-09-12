@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Heading from './component/Heading';
+import Footer from './component/Footer';
+import Navigation from './component/Navigation';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Cart } from './pages/Cart';
+import {AboutUs} from './pages/AboutUs';
+import {Contact} from './pages/Contact'
 
-function App() {
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCount(storedCart.length);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Heading />
+        <Navigation count={count} />
+        <Routes>
+          <Route path="/" element={<Home count={count} setCount={setCount} />} />
+          <Route path="/cart" element={<Cart setCount={setCount} />} />
+          <Route path="/about_us" element={<AboutUs/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
