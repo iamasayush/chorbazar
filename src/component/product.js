@@ -3,7 +3,7 @@ import {images} from "../images/images"
 export const product = [
     {
       name: "Aircraft Carrier",
-      image: images.aircraftCarrier,
+      image: images.aircraftcarrier,
       price: "Rs. 1",
     },
 
@@ -20,7 +20,7 @@ export const product = [
     },
 
     {
-      name: "Fighter Jet",
+      name: "Fighter",
       image: images.fighter,
       price: "Rs. 1",
     },
@@ -288,4 +288,5 @@ export const product = [
       image: images.yacht,
       price: "Rs. 1",
     },
+
   ];

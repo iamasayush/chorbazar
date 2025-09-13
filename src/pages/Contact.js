@@ -16,7 +16,7 @@ return (
                         src={images.whatsapp} 
                         alt="WhatsApp" className="w-6 h-6" 
                     />
-
+                    
                     <strong>Phone:</strong>
 
                     <a 

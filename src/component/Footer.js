@@ -6,7 +6,7 @@ export default function Footer() {
             <p>&copy; Copywrite</p>
             <p>|</p>
 
-            <p><Link to="/contact" className="nav">Contact</Link></p>
+            <Link to="/contact" className="nav">Contact</Link>
 
             <p>|</p>
             
