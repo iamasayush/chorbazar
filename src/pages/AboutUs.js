@@ -1,7 +1,7 @@
 export const AboutUs = () => {
     return (
         <div className="flex justify-center">
-            <div className="lg:max-w-[70%] max-w-[90%] text-justify text-4xl space-y-6">
+            <div className="lg:max-w-[70%] max-w-[90%] text-justify lg:text-4xl space-y-6">
 
                 <p className="text-violet-500 text-center mb-20 text-5xl">
                     WELCOME TO CHOR BAZAAR

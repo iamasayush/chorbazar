@@ -31,7 +31,7 @@ import Nuke from                    '../things/nuke';
 import Pistol from                  '../things/pistol';
 import RangeRover from              '../things/rangerover';
 import Rocket from                  '../things/rocket';
-import RPG from                     '../things/RPG';
+import RPG from                     '../things/rpg';
 import S400 from                    '../things/s400';
 import Safari from                  '../things/safari';
 import Scorpion from                '../things/scorpion';
@@ -47,13 +47,13 @@ import Truck from                   '../things/truck';
 import XUV700 from                  '../things/xuv700';
 import Yacht from                   '../things/yacht';
 
-import Heading from '../component/Heading';
-import Footer from '../component/Footer';
-import Navigation from '../component/Navigation';
-import { Home } from '../pages/Home';
-import { Cart } from '../pages/Cart';
-import {AboutUs} from '../pages/AboutUs';
-import {Contact} from '../pages/Contact';
+import Heading from     '../component/Heading';
+import Footer from      '../component/Footer';
+import Navigation from  '../component/Navigation';
+import { Home } from    '../pages/Home';
+import { Cart } from    '../pages/Cart';
+import {AboutUs} from   '../pages/AboutUs';
+import {Contact} from   '../pages/Contact';
 
 export const thing =  {
 Heading,

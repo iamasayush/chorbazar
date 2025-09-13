@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const Cart = ({ setCount }) => {
+export const Cart = ({ count,setCount }) => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -31,10 +31,6 @@ export const Cart = ({ setCount }) => {
 
   const groupedCart = getGrouped();
 
-  const calculateTotalAmount = () => {
-    return groupedCart.reduce((total, item) => total + item.price * item.quantity, 0);
-  };
-
   return (
     <div className="p-4">
       <h1 className="text-6xl text-blue-700 font-bold text-center">Your Cart</h1>
@@ -57,10 +53,11 @@ export const Cart = ({ setCount }) => {
             </div>
           ))}
 
-          <p className="text-center col-span-6 text-6xl font-bold">
+          <p className="text-center col-span-6 lg:text-6xl font-bold">
             Your Total Amount is
-            <span className="text-violet-800"> Rs.{calculateTotalAmount()}</span>
+            <span className="text-violet-800"> Rs.{count}</span>
             <br />
+
             But sorry,
             <br />
             You can't actually purchase,

@@ -15,8 +15,8 @@ export default function ItemPage({ description }) {
   const title = imageFolder.charAt(0).toUpperCase() + imageFolder.slice(1);
 
   return (
-    <div className="grid grid-cols-3 grid-rows-1 lg:grid-rows-4 h-screen">
-      <div className="flex justify-center items-center col-span-3 text-center text-6xl lg:text-9xl ">
+    <div className="grid grid-rows-12 lg:grid-cols-3 grid-rows-3 lg:grid-rows-4 h-screen">
+      <div className="flex justify-center items-center col-span-3 text-center text-5xl lg;text-6xl lg:text-9xl ">
         <h1>{title}</h1>
       </div>
 
@@ -30,7 +30,7 @@ export default function ItemPage({ description }) {
         <button onClick={next} className="lg:text-9xl text-4xl">▶</button>
       </div>
 
-      <div className=" lg:mx-96 mx-24 mt-24 col-span-3 text-4xl text-justify">
+      <div className=" lg:mx-96 lg:mx-24 mx-10 mt-24 col-span-3 text-lg lg:text-4xl text-justify">
         <p>{description}</p>
       </div>
     </div>

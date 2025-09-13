@@ -32,7 +32,7 @@ import nuke from                './items/nuke/nuke.jpg';
 import pistol from              './items/pistol/pistol.jpg';
 import rangerover from          './items/rangerover/rangerover.jpg';
 import rocket from              './items/rocket/rocket.jpg';
-import RPG from                 './items/RPG/RPG.jpg';
+import RPG from                 './items/rpg/RPG.jpg';
 import s400 from                './items/s400/s400.jpg';
 import safari from              './items/safari/safari.jpg';
 import scorpion from            './items/scorpion/scorpion.jpg';

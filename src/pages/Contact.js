@@ -7,22 +7,23 @@ export const Contact = () => {
 };
 
 return (
-    <div className="h-screen flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center p-10 space-y-24 text-3xl lg:h-[60%] lg:w-[40%] shadow-2xl bg-yellow-100">
+    <div className="h-screen flex justify-center lg:items-center">
+        <div className="flex flex-col lg:justify-center lg:items-center p-10 space-y-24  lg:text-3xl lg:h-[60%] lg:w-[50%] lg:shadow-2xl lg:bg-yellow-100">
             <div className="space-y-2 ">
 
-                <div className="flex items-center gap-3">
+                <div className="flex lg:items-center gap-3">
                     <img 
                         src={images.whatsapp} 
                         alt="WhatsApp" className="w-6 h-6" 
                     />
                     
                     <strong>Phone:</strong>
-
+                    
                     <a 
                         href="tel:+918959420701"
                         rel="noreferrer"
                         className="text-blue-500 
+                        
                         hover:underline"
                     >
                         
